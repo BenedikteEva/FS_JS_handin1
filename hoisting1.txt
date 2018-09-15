@@ -1,0 +1,40 @@
+når en variabel bliver deklareret i javascript bliver den i kørslen af scriptet flyttet til toppen af det scope 
+ den befinder sig i. 
+
+ Scope kan beskrives som det område man opererer med lige nu. hvis man er i det globale scope er man i browseren 
+ hvor javascript bliver kørt. man kan befinde sig i et document scope som er f.eks. en htmlside, eller man opererer
+ i et function scope altså i en funktion. 
+
+        Global Scope
+ ---------------------------
+ |     documentscope        |
+ |    -------------------   |
+ |    | functionscope   |   |
+ |    -------------------   |
+ |                          |
+ |                          |
+ |                          |
+ |                          | 
+ |                          |
+ |                          |
+ |                          |
+-----------------------------
+ 
+
+ variable der bliver erklæret i de globale scope er tilgængelige for alle andre scopes inden for det globale
+ mens variable der bliver erklæret inden for et mindre scope kun er tilgængelige for sit eget og indre scopes. 
+
+Lexical scoping (sometimes known as static scoping ) is a convention used with many programming languages that sets the scope (range of functionality) of a variable so that it may only be called (referenced) from within the block of code in which it is defined. The scope is determined when the code is compiled. A variable declared in this fashion is sometimes called a private variable.
+
+The opposite approach is known as dynamic scoping . Dynamic scoping creates variables that can be called from outside the block of code in which they are defined. A variable declared in this fashion is sometimes called a public variable.
+ det var et sidespring. 
+ 
+Hoisting gør at hvis man kører en function vil alle deklarerede variable
+blive ført op i toppen af funktionen dette gælder bare ikke for initialiseringer af var. 
+Det betyder at hvis man bruger en deklareret variabel inden den er initialiseret /har fået en værdi
+vil den variable stå som undefined.
+
+hvis man kører en hel script fil vil de globale variable blive ført op i toppen (blive kørt først)
+Deklaration af funktionen er også hoistede. 
+
+Design regel - altid putte delarationen af variable i begyndelsen af et scope så man undgår hoisting problemer.

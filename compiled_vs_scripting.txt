@@ -1,0 +1,36 @@
+Basically, all scripting languages are programming languages. The theoretical difference between the two is that scripting languages do
+not require the compilation step and are rather interpreted. For example, normally, a C program needs to be compiled before running
+whereas normally, a scripting language like JavaScript or PHP need not be compiled.
+ 
+Generally, compiled programs run faster than interpreted programs because they are first converted native machine code.
+ Also, compilers read and analyze the code only once, and report the errors collectively that the code might have, but the interpreter 
+ will read and analyze the code statements each time it meets them and halts at that very instance if there is some error. In practice, 
+ the distinction between the two is getting blurred owing to improved computation capabilities of the modern hardware and advanced 
+ coding practices.
+ 
+Another point to be noted is that while classifying a language as scripting language or programming language, the environment on 
+which it would execute must be taken into consideration. The reason why this is important is that we can design an interpreter for
+C language and use it as a scripting language, and at the same time, we can design a compiler for JavaScript and use it as a
+programming language. A live example of this is V8, the JavaScript engine of Google Chrome, which compiles the JavaScript code 
+into machine code, rather than interpreting it.
+ 
+
+Some scripting languages traditionally used without an explicit compilation step are JavaScript, PHP, Python, VBScript.
+ 
+Some programming languages traditionally used with an explicit compilation step are Java, C, C++.
+
+according to java.com :
+
+ JavaScript does not create applets or stand-alone applications. In its most common form, JavaScript resides inside HTML documents,
+  and can provide levels of interactivity to web pages that are not achievable with simple HTML.
+Key differences between Java and JavaScript:
+
+    Java is an OOP programming language while Java Script is an OOP scripting language.
+    Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only.
+    Java code needs to be compiled while JavaScript code are all in text (needs to be interpreted to environment).
+    They require different plug-ins.
+
+A compiler is computer software that transforms computer code written in one programming language (the source language) into 
+another programming language (the target language). Compilers are a type of translator that support digital devices, primarily 
+computers. The name compiler is primarily used for programs that translate source code from a high-level programming language
+to a lower level language (e.g., assembly language, object code, or machine code) to create an executable program.[1]
