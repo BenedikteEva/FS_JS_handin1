@@ -25,26 +25,32 @@ setAge
 setName
 getInfo (should return a string like Peter, 45) */
 function Person(first, last, age) {
-    this.firstName = first;
-    this.lastName = last;
-    this.name;
-    this.age = age;
+    this.firstName,
+    this.lastName ,
+    this.age ,
     this.getInfo = function () {
-        return this.name+ ", " + age
+        return this.name+ ", " + this.age
     }
-    this.setName=function(){
-        this.name=first+" "+last
+    this.setName=function(first, last){
+       this.name=first+" "+last
     }
+    this.setAge=function(age){this.age=age}
    
  
 }
-let Benedikte = new Person("Benedikte", "Majbrink", 47);
 
-Benedikte.setName("benedikteEva", "Majbrink")
+let John= new Person("John", "Doe", 30);
+console.log(John.getInfo());
+John.setAge(31)
+let Benedikte = new Person();
+Benedikte.setName("BenedikteEva", "Majbrink")
+Benedikte.setAge(47)
+John.age=24;
 console.log(Benedikte.getInfo());
-
+console.log(John.getInfo());
 // iife - immediatly invoked function expression function expression is created and immideatly called with own private vaiables7
-
+Benedikte=new Person("JOhn", "Doe", 45);
+console.log(Benedikte.getInfo());
 
 (function() {
 
