@@ -1,10 +1,13 @@
 # FS_JS_handin1
 
+Er først færdig søndag aften 16/9
+
 Der ligger nogle txt-filer som bare er materiale til reflektionerne, noget har jeg selv skrevet andet har jeg bare copypastet
 
 code exempler ligger i forskellige js eller ts filer og forskellige projekter. 
 
 Nedenstående er en oversigt over de eksempler jeg kan komme med so far og hvor jeg kan finde dem. 
+
 
 Babel, webpack and Linters
 1. Explain (some) of the purposes with the tools Babel and WebPack, using  examples from the exercises (scratch surface)
@@ -64,3 +67,4 @@ d. Example(s) that demonstrate error handling with promises
 a. Why this often is the preferred way of handling promises
 b. Error handling with async/await
 c. Serial or parallel execution with async/await.
+
