@@ -16,23 +16,20 @@ var sum2 = function (a, b) {
 console.log(sum2(1, 2)); // 3
 // please notice the word let. it is a variable that can be rewritten If you dont want a variable to be rewritten though codeexecution you can use the word const. 
 // these two words can replace the old var. The problem with var is that it is saved within the global object and that the declaration is hoisted.
-var foo={};
+var foo = {};
 // a method to create methods
-foo.method = function(name, cb){
-  this[name] = cb;
+foo.method = function (name, cb) {
+    this[name] = cb;
 };
-foo.method("bar", function(){
+foo.method("bar", function () {
     console.log("test");
-  },
-  foo.bar(), // => "test"
-this.test =("attached to the module"));
-
-
+    foo.bar()// => "test"
+        this.test = "attached to the module";
+});
 var foo = {
     test: "attached to an object"
 };
 // a method to create methods
-
 foo.method = function (name, cb) {
     this[name] = cb;
 };
