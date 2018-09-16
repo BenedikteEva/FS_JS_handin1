@@ -1,6 +1,6 @@
 # FS_JS_handin1
 
-Er først færdig søndag aften 
+Er først færdig søndag aften 16/9
 
 Der ligger nogle txt-filer som bare er materiale til reflektionerne, noget har jeg selv skrevet andet har jeg bare copypastet
 
