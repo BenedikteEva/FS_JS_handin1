@@ -25,7 +25,7 @@ Explain (some) of the purposes with the tools Babel and WebPack, using  examples
 
 Explain the purpose of “use strict” and Linters, exemplified with ESLint (linters + eslint scratch surface)
 -in javascript you can use a variable without declaring it but you migth get warning. When you use strict mode it will give 
-an explicit error when trying to do exactly that.-
+an explicit error when trying to do exact-ly that.
 
 - A linter or lint refers to tools that analyze source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.
 The term originates from a Unix utility that examined C language source code. ESLint is a linter for echmascript 
