@@ -1,0 +1,59 @@
+2 Chaining promises (fetch requests), and why GraphQL is cool ;-)
+
+Enter this URL in your browser: https://swapi.co/api/people/1/
+Use information from this link to find the first movie in which  Luke Skywalker  appeared
+Use information from this link to find the first species, which appeared in this movie
+Use information from this link to find the planet (homeworld) for this species
+
+
+
+
+Now, Implement a method getPlanetforFirstSpeciesInFirstMovieForPerson(id){} which for id = 1 (Luke Skywalker) should log this info:
+
+Name: Luke Skywalker
+First film: The Empire Strikes Back
+First species: Yoda's species
+Homeworld for Specie: unknown
+
+
+
+const URL =https://swapi.co/api/people/1/
+
+
+Hints: 
+1) This requires you to make a number of REST-requests (using fetch), read a value from the request, and use this value to perform a new request.
+2) The lists in the responses are not sorted. For this exercise it’s ok to just use the first URL in the list: Like films[0] will actually give you the second movie, see below:
+"films": [
+        "https://swapi.co/api/films/2/", 
+        "https://swapi.co/api/films/6/", 
+        "https://swapi.co/api/films/3/", 
+        "https://swapi.co/api/films/1/", 
+        "https://swapi.co/api/films/7/"
+    ],
+
+Info: So why did I give this exercise the subtitle “and why GraphQL is cool”?
+
+In order to get the information needed for the task above, you had to make four HTTP-requests. Let’s do the same thing, using a GraphQL-endpoint:
+
+Open a browser with this URL http://graphql.org/swapi-graphql and paste in the code below:
+
+{
+    person(id: "cGVvcGxlOjE="){
+    name
+    filmConnection(first:1) {
+      films{
+        title,
+        speciesConnection(first:1){
+          species{
+            name,
+            id,     
+            homeworld{
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
