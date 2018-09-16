@@ -1,10 +1,17 @@
 # FS_JS_handin1
 
+Er først færdig søndag aften 16/9
+
 Der ligger nogle txt-filer som bare er materiale til reflektionerne, noget har jeg selv skrevet andet har jeg bare copypastet
 
 code exempler ligger i forskellige js eller ts filer og forskellige projekter. 
 
+<<<<<<< HEAD
 Nedenstående er en oversigt over de eksempler jeg skal komme med og hvor jeg kan finde dem. 
+=======
+Nedenstående er en oversigt over de eksempler jeg kan komme med so far og hvor jeg kan finde dem. 
+
+>>>>>>> 3966b9a7c21c06c961e98b0b5f1c8eb3557be236
 
 Babel, webpack and Linters
 1. Explain (some) of the purposes with the tools Babel and WebPack, using  examples from the exercises (scratch surface)
@@ -47,7 +54,11 @@ ES6
 TypeScript
 9. Provide an number of examples to demonstrate the benefits of using TypeScript, including,
 a. types, 
+<<<<<<< HEAD
 b. interfaces,                                             -- ts_exersices --
+=======
+b. interfaces, 
+>>>>>>> 3966b9a7c21c06c961e98b0b5f1c8eb3557be236
 c. classes and 
 d. generics
 
@@ -64,3 +75,7 @@ d. Example(s) that demonstrate error handling with promises
 a. Why this often is the preferred way of handling promises
 b. Error handling with async/await
 c. Serial or parallel execution with async/await.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3966b9a7c21c06c961e98b0b5f1c8eb3557be236
